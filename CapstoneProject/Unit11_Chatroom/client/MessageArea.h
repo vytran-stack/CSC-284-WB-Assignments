@@ -1,0 +1,15 @@
+
+#pragma once
+#include "Window.h"
+#include <vector>
+#include <string>
+
+class MessageArea : public Window {
+    std::vector<std::string> messages;
+
+public:
+    MessageArea(int h, int w, int y, int x);
+    void draw();
+    void addLine(const std::string& msg);
+};
+
